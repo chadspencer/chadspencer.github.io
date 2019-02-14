@@ -4146,7 +4146,8 @@ body {
   scroll-padding: 50vh 0 0 0;
   scroll-snap-points-y: repeat(300px);
   scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory; }
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch; }
   body.scrolling {
     scroll-padding: 0;
     scroll-snap-points-y: none;
@@ -4176,6 +4177,8 @@ nav.projects {
         font-size: 18px;
         padding-left: 5%;
         padding-right: 5%; } }
+    nav.projects span:hover {
+      background: #efefef; }
 
 main {
   height: 50vh;
