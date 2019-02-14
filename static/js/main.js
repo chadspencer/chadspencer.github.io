@@ -2,7 +2,7 @@ $(document).ready(function() {
   function nav() {
     $("nav span").each(function(index) {
       $(this).click(function() {
-        var scrollOffset = 100 * (index + 1) + 1;
+        var scrollOffset = 100 * (index + 1);
         $("body").addClass("scrolling");
         if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
           function customScrollTo(to, duration) {
