@@ -4143,10 +4143,8 @@ body {
   font-weight: 300;
   height: auto;
   scroll-padding: 50vh 0 0 0;
-  scroll-snap-points-y: repeat(100px);
   scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch; }
+  scroll-snap-type: y mandatory; }
   body.scrolling {
     scroll-padding: 0;
     scroll-snap-points-y: none;
