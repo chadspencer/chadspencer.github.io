@@ -4282,7 +4282,7 @@ footer {
   position: relative; }
   @media (max-width: 767px) {
     footer {
-      padding-left: 5%; } }
+      padding: 0 5%; } }
   footer .container {
     top: 50%;
     -webkit-transform: translateY(-50%);

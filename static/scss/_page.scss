@@ -174,7 +174,7 @@ footer {
   padding: 0 2%;
   position: relative;
   @include mq(small) {
-    padding-left: 5%;
+    padding: 0 5%;
   }
   .container {
     @include vertical-align();
