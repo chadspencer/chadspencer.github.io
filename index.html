@@ -13,23 +13,18 @@ title: Developer | Shopify | Craft CMS | Craft Commerce | Midwest | Springfield,
 <main>
   <section style="background-image: url(/static/img/chadspencer.jpg);">
     <article>
-      <div class="content">
-        <h1>Chad Spencer</h1>
-        <p>I'm a developer and overall swell guy living in the heart of the midwest. I'm an obsessor over details and love bringing static designs to life. I specialize in front-end development and building full-scale Craft CMS, Craft Commerce and Shopify sites.</p>
-      </div>
+      <h1>Chad Spencer</h1>
+      <p>I'm a developer and overall swell guy living in the heart of the midwest. I'm an obsessor over details and love bringing static designs to life. I specialize in front-end development and building full-scale Craft CMS, Craft Commerce and Shopify sites.</p>
     </article>
   </section>
   {% for entry in site.data.work %}
-    <a class="section" href="{{ entry.url }}" target="_blank" style="background-image: url(/static/img/{{ entry.image }});">
-      <div class="content">
+    <section style="background-image: url(/static/img/{{ entry.image }});">
+      <article>
         {% if entry.url %}
-          <h2>{{ entry.title }}&nbsp;<i class="fal fa-arrow-right"></i></h2>
+          <h2><a href="{{ entry.url }}" target="_blank">{{ entry.title }}&nbsp;<i class="fal fa-arrow-right"></i></a></h2>
         {% else %}
           <h2>{{ entry.title }}</h2>
         {% endif %}
-        <!-- {% if entry.description %}
-          <p>{{ entry.description }}</p>
-        {% endif %} -->
         {% if entry.tags %}
           <div class="tags">
             {% for tag in entry.tags %}
@@ -37,8 +32,8 @@ title: Developer | Shopify | Craft CMS | Craft Commerce | Midwest | Springfield,
             {% endfor %}
           </div>
         {% endif %}
-      </div>
-    </a>
+      </article>
+    </section>
   {% endfor %}
 </main>
 <footer>

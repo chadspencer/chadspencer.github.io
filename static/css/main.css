@@ -4208,8 +4208,8 @@ main {
     display: block;
     height: 50vh;
     position: relative; }
-    main section .content,
-    main .section .content {
+    main section article,
+    main .section article {
       bottom: 15%;
       display: block;
       left: 2%;
@@ -4217,18 +4217,18 @@ main {
       width: 65%;
       z-index: 100; }
       @media (max-width: 1259px) {
-        main section .content,
-        main .section .content {
+        main section article,
+        main .section article {
           width: 90%; } }
       @media (max-width: 767px) {
-        main section .content,
-        main .section .content {
+        main section article,
+        main .section article {
           bottom: 10%;
           left: 5%; } }
-      main section .content h1,
-      main section .content h2,
-      main .section .content h1,
-      main .section .content h2 {
+      main section article h1,
+      main section article h2,
+      main .section article h1,
+      main .section article h2 {
         color: #ffffff;
         font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
         font-size: 40px;
@@ -4236,63 +4236,63 @@ main {
         line-height: 50px;
         text-transform: uppercase; }
         @media (max-width: 767px) {
-          main section .content h1,
-          main section .content h2,
-          main .section .content h1,
-          main .section .content h2 {
+          main section article h1,
+          main section article h2,
+          main .section article h1,
+          main .section article h2 {
             font-size: 25px;
             line-height: 30px; } }
-        main section .content h1 a,
-        main section .content h2 a,
-        main .section .content h1 a,
-        main .section .content h2 a {
+        main section article h1 a,
+        main section article h2 a,
+        main .section article h1 a,
+        main .section article h2 a {
           transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
           color: #ffffff;
           text-decoration: none; }
-          main section .content h1 a:hover i,
-          main section .content h2 a:hover i,
-          main .section .content h1 a:hover i,
-          main .section .content h2 a:hover i {
+          main section article h1 a:hover i,
+          main section article h2 a:hover i,
+          main .section article h1 a:hover i,
+          main .section article h2 a:hover i {
             margin: 0 0 0 10px; }
-          main section .content h1 a i,
-          main section .content h2 a i,
-          main .section .content h1 a i,
-          main .section .content h2 a i {
+          main section article h1 a i,
+          main section article h2 a i,
+          main .section article h1 a i,
+          main .section article h2 a i {
             transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
             font-size: 20px;
             line-height: 20px;
             position: relative;
             top: -3px;
             vertical-align: middle; }
-      main section .content h3,
-      main .section .content h3 {
+      main section article h3,
+      main .section article h3 {
         color: #ffffff;
         font-size: 24px;
         line-height: 32px;
         margin: 10px 0 0 0; }
         @media (max-width: 767px) {
-          main section .content h3,
-          main .section .content h3 {
+          main section article h3,
+          main .section article h3 {
             font-size: 18px;
             line-height: 24px; } }
-      main section .content p,
-      main .section .content p {
+      main section article p,
+      main .section article p {
         color: #ffffff;
         font-size: 20px;
         line-height: 30px;
         margin: 10px 0 0 0; }
         @media (max-width: 767px) {
-          main section .content p,
-          main .section .content p {
+          main section article p,
+          main .section article p {
             font-size: 16px;
             line-height: 24px; } }
-      main section .content .tags,
-      main .section .content .tags {
+      main section article .tags,
+      main .section article .tags {
         display: block;
         font-size: 0;
         margin: 10px 0 0 0; }
-        main section .content .tags span,
-        main .section .content .tags span {
+        main section article .tags span,
+        main .section article .tags span {
           background: #000000;
           border-radius: 13px;
           color: #ffffff;
