@@ -42,7 +42,7 @@ nav.projects {
     border-bottom: 1px solid $light-grey;
     box-sizing: border-box;
     color: $black;
-    //cursor: pointer;
+    cursor: pointer;
     display: block;
     font-family: $mont;
     font-size: 24px;
@@ -59,7 +59,7 @@ nav.projects {
       padding-right: 5%;
     }
     &:hover {
-      //background: #efefef;
+      // background: #efefef;
     }
   }
 }

@@ -4160,6 +4160,7 @@ nav.projects {
     border-bottom: 1px solid #BDBDBD;
     box-sizing: border-box;
     color: #000000;
+    cursor: pointer;
     display: block;
     font-family: "Montserrat", Helvetica, Arial, Verdana, sans-serif;
     font-size: 24px;
