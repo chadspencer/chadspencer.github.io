@@ -23,9 +23,8 @@ body {
   font-style: normal;
   font-weight: 300;
   height: auto;
-  padding: 50vh 0 0 0;
   scroll-padding: 50vh 0 0 0;
-  scroll-snap-points-y: repeat(300px);
+  scroll-snap-points-y: repeat(100px);
   scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
@@ -33,11 +32,16 @@ body {
     scroll-padding: 0;
     scroll-snap-points-y: none;
     scroll-snap-type: none;
+  }
+  @include mq(medium) {
+    scroll-padding: 0;
+    scroll-snap-points-y: none;
     scroll-snap-type: none;
   }
 }
 nav.projects {
   background: $white;
+  padding: 50vh 0 0 0;
   span {
     @include transition (all .2s cubic-bezier(0.645, 0.045, 0.355, 1.000));
     border-bottom: 1px solid $light-grey;
@@ -81,10 +85,12 @@ main {
     width: 100%;
     z-index: 10;
   }
-  section {
+  section,
+  .section {
     background-color: $black;
     background-position: right center;
     background-size: cover;
+    display: block;
     height: 50vh;
     position: relative;
     .content {

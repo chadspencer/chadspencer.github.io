@@ -20,27 +20,25 @@ title: Developer | Shopify | Craft CMS | Craft Commerce | Midwest | Springfield,
     </article>
   </section>
   {% for entry in site.data.work %}
-    <section style="background-image: url(/static/img/{{ entry.image }});">
-      <article>
-        <div class="content">
-          {% if entry.url %}
-            <h2><a href="{{ entry.url }}" target="_blank">{{ entry.title }}&nbsp;<i class="fal fa-arrow-right"></i></a></h2>
-          {% else %}
-            <h2>{{ entry.title }}</h2>
-          {% endif %}
-          <!-- {% if entry.description %}
-            <p>{{ entry.description }}</p>
-          {% endif %} -->
-          {% if entry.tags %}
-            <div class="tags">
-              {% for tag in entry.tags %}
-                <span>{{ tag }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      </article>
-    </section>
+    <a class="section" href="{{ entry.url }}" target="_blank" style="background-image: url(/static/img/{{ entry.image }});">
+      <div class="content">
+        {% if entry.url %}
+          <h2>{{ entry.title }}&nbsp;<i class="fal fa-arrow-right"></i></h2>
+        {% else %}
+          <h2>{{ entry.title }}</h2>
+        {% endif %}
+        <!-- {% if entry.description %}
+          <p>{{ entry.description }}</p>
+        {% endif %} -->
+        {% if entry.tags %}
+          <div class="tags">
+            {% for tag in entry.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </a>
   {% endfor %}
 </main>
 <footer>

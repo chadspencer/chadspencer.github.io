@@ -2,8 +2,7 @@ $(document).ready(function() {
   function nav() {
     $("nav span").each(function(index) {
       $(this).click(function() {
-        var scrollOffset = 100 * (index + 1) + 2;
-        var currentScroll = $("html, body").scrollTop();
+        var scrollOffset = 100 * (index + 1) + 1;
         $("body").addClass("scrolling");
         if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
           function customScrollTo(to, duration) {
@@ -29,6 +28,10 @@ $(document).ready(function() {
             animateScroll();
           }
 
+          function removeBodyClass() {
+            $("body").removeClass("scrolling")
+          }
+
           Math.easeInOutQuad = function(t, b, c, d) {
             t /= d / 2;
             if (t < 1) return (c / 2) * t * t + b;
@@ -37,6 +40,7 @@ $(document).ready(function() {
           };
 
           customScrollTo(scrollOffset, 250);
+          setTimeout(removeBodyClass, 250);
         } else {
           $("html, body").animate(
             {
@@ -56,7 +60,7 @@ $(document).ready(function() {
   function scroll() {
     var scrollPosition = $(document).scrollTop();
     var sectionHeight = $("main").outerHeight();
-    $("main").scrollTop(sectionHeight * (scrollPosition / 100));
+    $("main").scrollTop(sectionHeight * (scrollPosition / 100) + 1);
   }
   scroll();
 
