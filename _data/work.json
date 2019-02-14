@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Simply Inspired",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "simplyinspired.jpg",
+    "tags": ["front-end", "back-end", "craft cms", "craft commerce"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Colony Co.",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "colony.jpg",
+    "tags": ["front-end", "back-end", "shopify"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Carpet Shoppe",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "carpetshoppe.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Boyd Aluminum",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "boyd.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Burrell Behavioral Health",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "burrell.jpg",
+    "tags": ["front-end"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "417 Magazine",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "417magazine.jpg",
+    "tags": ["front-end"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Noble Audio",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "nobleaudio.jpg",
+    "tags": ["front-end", "back-end", "symphony cms"],
+    "url": "http://google.com"
+  },
+  {
+    "title": "Missouri Over There",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "overthere.jpg",
+    "tags": ["front-end", "back-end", "symphony cms"],
+    "url": "http://google.com"
+  }
+]
