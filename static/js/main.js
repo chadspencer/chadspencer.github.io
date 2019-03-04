@@ -1,73 +1,27 @@
-import $ from 'jquery';
+webpackJsonp([0],{
 
-$(document).ready(function() {
-  function nav() {
-    $("nav span").each(function(index) {
-      $(this).click(function() {
-        var scrollOffset = 100 * (index + 1);
-        $("body").addClass("scrolling");
-        if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
-          function customScrollTo(to, duration) {
-            var start = window.pageYOffset,
-              change = to - start,
-              currentTime = 0,
-              increment = 20;
+/***/ "./_assets/js/main.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-            var animateScroll = function() {
-              currentTime += increment;
-              var val = Math.easeInOutQuad(
-                currentTime,
-                start,
-                change,
-                duration
-              );
-              window.scrollTo(0, val);
+"use strict";
+eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(\"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);\n\n\n__WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {\n  function nav() {\n    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"nav span\").each(function (index) {\n      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).click(function () {\n        var scrollOffset = 100 * (index + 1);\n        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"body\").addClass(\"scrolling\");\n        if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {\n          var customScrollTo = function customScrollTo(to, duration) {\n            var start = window.pageYOffset,\n                change = to - start,\n                currentTime = 0,\n                increment = 20;\n\n            var animateScroll = function animateScroll() {\n              currentTime += increment;\n              var val = Math.easeInOutQuad(currentTime, start, change, duration);\n              window.scrollTo(0, val);\n\n              if (currentTime < duration) {\n                setTimeout(animateScroll, increment);\n              }\n            };\n            animateScroll();\n          };\n\n          var removeBodyClass = function removeBodyClass() {\n            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"body\").removeClass(\"scrolling\");\n          };\n\n          Math.easeInOutQuad = function (t, b, c, d) {\n            t /= d / 2;\n            if (t < 1) return c / 2 * t * t + b;\n            t--;\n            return -c / 2 * (t * (t - 2) - 1) + b;\n          };\n\n          customScrollTo(scrollOffset, 250);\n          setTimeout(removeBodyClass, 250);\n        } else {\n          __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"html, body\").animate({\n            scrollTop: scrollOffset\n          }, 500, function () {\n            __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"body\").removeClass(\"scrolling\");\n          });\n        }\n      });\n    });\n  }\n  nav();\n\n  function scroll() {\n    var scrollPosition = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).scrollTop();\n    var sectionHeight = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"main\").outerHeight();\n    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(\"main\").scrollTop(sectionHeight * (scrollPosition / 100) + 1);\n  }\n  scroll();\n\n  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(window).scroll(function () {\n    scroll();\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9fYXNzZXRzL2pzL21haW4uanM/M2U1ZCJdLCJuYW1lcyI6WyIkIiwiZG9jdW1lbnQiLCJyZWFkeSIsIm5hdiIsImVhY2giLCJpbmRleCIsImNsaWNrIiwic2Nyb2xsT2Zmc2V0IiwiYWRkQ2xhc3MiLCJuYXZpZ2F0b3IiLCJ1c2VyQWdlbnQiLCJtYXRjaCIsImN1c3RvbVNjcm9sbFRvIiwidG8iLCJkdXJhdGlvbiIsInN0YXJ0Iiwid2luZG93IiwicGFnZVlPZmZzZXQiLCJjaGFuZ2UiLCJjdXJyZW50VGltZSIsImluY3JlbWVudCIsImFuaW1hdGVTY3JvbGwiLCJ2YWwiLCJNYXRoIiwiZWFzZUluT3V0UXVhZCIsInNjcm9sbFRvIiwic2V0VGltZW91dCIsInJlbW92ZUJvZHlDbGFzcyIsInJlbW92ZUNsYXNzIiwidCIsImIiLCJjIiwiZCIsImFuaW1hdGUiLCJzY3JvbGxUb3AiLCJzY3JvbGwiLCJzY3JvbGxQb3NpdGlvbiIsInNlY3Rpb25IZWlnaHQiLCJvdXRlckhlaWdodCJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7O0FBRUFBLDhDQUFDQSxDQUFDQyxRQUFGLEVBQVlDLEtBQVosQ0FBa0IsWUFBVztBQUMzQixXQUFTQyxHQUFULEdBQWU7QUFDYkgsa0RBQUNBLENBQUMsVUFBRixFQUFjSSxJQUFkLENBQW1CLFVBQVNDLEtBQVQsRUFBZ0I7QUFDakNMLG9EQUFDQSxDQUFDLElBQUYsRUFBUU0sS0FBUixDQUFjLFlBQVc7QUFDdkIsWUFBSUMsZUFBZSxPQUFPRixRQUFRLENBQWYsQ0FBbkI7QUFDQUwsc0RBQUNBLENBQUMsTUFBRixFQUFVUSxRQUFWLENBQW1CLFdBQW5CO0FBQ0EsWUFBSUMsVUFBVUMsU0FBVixDQUFvQkMsS0FBcEIsQ0FBMEIseUNBQTFCLENBQUosRUFBMEU7QUFBQSxjQUMvREMsY0FEK0QsR0FDeEUsU0FBU0EsY0FBVCxDQUF3QkMsRUFBeEIsRUFBNEJDLFFBQTVCLEVBQXNDO0FBQ3BDLGdCQUFJQyxRQUFRQyxPQUFPQyxXQUFuQjtBQUFBLGdCQUNFQyxTQUFTTCxLQUFLRSxLQURoQjtBQUFBLGdCQUVFSSxjQUFjLENBRmhCO0FBQUEsZ0JBR0VDLFlBQVksRUFIZDs7QUFLQSxnQkFBSUMsZ0JBQWdCLFNBQWhCQSxhQUFnQixHQUFXO0FBQzdCRiw2QkFBZUMsU0FBZjtBQUNBLGtCQUFJRSxNQUFNQyxLQUFLQyxhQUFMLENBQ1JMLFdBRFEsRUFFUkosS0FGUSxFQUdSRyxNQUhRLEVBSVJKLFFBSlEsQ0FBVjtBQU1BRSxxQkFBT1MsUUFBUCxDQUFnQixDQUFoQixFQUFtQkgsR0FBbkI7O0FBRUEsa0JBQUlILGNBQWNMLFFBQWxCLEVBQTRCO0FBQzFCWSwyQkFBV0wsYUFBWCxFQUEwQkQsU0FBMUI7QUFDRDtBQUNGLGFBYkQ7QUFjQUM7QUFDRCxXQXRCdUU7O0FBQUEsY0F3Qi9ETSxlQXhCK0QsR0F3QnhFLFNBQVNBLGVBQVQsR0FBMkI7QUFDekIzQiwwREFBQ0EsQ0FBQyxNQUFGLEVBQVU0QixXQUFWLENBQXNCLFdBQXRCO0FBQ0QsV0ExQnVFOztBQTRCeEVMLGVBQUtDLGFBQUwsR0FBcUIsVUFBU0ssQ0FBVCxFQUFZQyxDQUFaLEVBQWVDLENBQWYsRUFBa0JDLENBQWxCLEVBQXFCO0FBQ3hDSCxpQkFBS0csSUFBSSxDQUFUO0FBQ0EsZ0JBQUlILElBQUksQ0FBUixFQUFXLE9BQVFFLElBQUksQ0FBTCxHQUFVRixDQUFWLEdBQWNBLENBQWQsR0FBa0JDLENBQXpCO0FBQ1hEO0FBQ0EsbUJBQVEsQ0FBQ0UsQ0FBRCxHQUFLLENBQU4sSUFBWUYsS0FBS0EsSUFBSSxDQUFULElBQWMsQ0FBMUIsSUFBK0JDLENBQXRDO0FBQ0QsV0FMRDs7QUFPQWxCLHlCQUFlTCxZQUFmLEVBQTZCLEdBQTdCO0FBQ0FtQixxQkFBV0MsZUFBWCxFQUE0QixHQUE1QjtBQUNELFNBckNELE1BcUNPO0FBQ0wzQix3REFBQ0EsQ0FBQyxZQUFGLEVBQWdCaUMsT0FBaEIsQ0FDRTtBQUNFQyx1QkFBVzNCO0FBRGIsV0FERixFQUlFLEdBSkYsRUFLRSxZQUFXO0FBQ1RQLDBEQUFDQSxDQUFDLE1BQUYsRUFBVTRCLFdBQVYsQ0FBc0IsV0FBdEI7QUFDRCxXQVBIO0FBU0Q7QUFDRixPQW5ERDtBQW9ERCxLQXJERDtBQXNERDtBQUNEekI7O0FBRUEsV0FBU2dDLE1BQVQsR0FBa0I7QUFDaEIsUUFBSUMsaUJBQWlCcEMsOENBQUNBLENBQUNDLFFBQUYsRUFBWWlDLFNBQVosRUFBckI7QUFDQSxRQUFJRyxnQkFBZ0JyQyw4Q0FBQ0EsQ0FBQyxNQUFGLEVBQVVzQyxXQUFWLEVBQXBCO0FBQ0F0QyxrREFBQ0EsQ0FBQyxNQUFGLEVBQVVrQyxTQUFWLENBQW9CRyxpQkFBaUJELGlCQUFpQixHQUFsQyxJQUF5QyxDQUE3RDtBQUNEO0FBQ0REOztBQUVBbkMsZ0RBQUNBLENBQUNnQixNQUFGLEVBQVVtQixNQUFWLENBQWlCLFlBQVc7QUFDMUJBO0FBQ0QsR0FGRDtBQUlELENBdEVEIiwiZmlsZSI6Ii4vX2Fzc2V0cy9qcy9tYWluLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICQgZnJvbSAnanF1ZXJ5JztcblxuJChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKSB7XG4gIGZ1bmN0aW9uIG5hdigpIHtcbiAgICAkKFwibmF2IHNwYW5cIikuZWFjaChmdW5jdGlvbihpbmRleCkge1xuICAgICAgJCh0aGlzKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAgICAgdmFyIHNjcm9sbE9mZnNldCA9IDEwMCAqIChpbmRleCArIDEpO1xuICAgICAgICAkKFwiYm9keVwiKS5hZGRDbGFzcyhcInNjcm9sbGluZ1wiKTtcbiAgICAgICAgaWYgKG5hdmlnYXRvci51c2VyQWdlbnQubWF0Y2goL2lQYWR8aVBob25lfGlQb2R8QW5kcm9pZHxXaW5kb3dzIFBob25lL2kpKSB7XG4gICAgICAgICAgZnVuY3Rpb24gY3VzdG9tU2Nyb2xsVG8odG8sIGR1cmF0aW9uKSB7XG4gICAgICAgICAgICB2YXIgc3RhcnQgPSB3aW5kb3cucGFnZVlPZmZzZXQsXG4gICAgICAgICAgICAgIGNoYW5nZSA9IHRvIC0gc3RhcnQsXG4gICAgICAgICAgICAgIGN1cnJlbnRUaW1lID0gMCxcbiAgICAgICAgICAgICAgaW5jcmVtZW50ID0gMjA7XG5cbiAgICAgICAgICAgIHZhciBhbmltYXRlU2Nyb2xsID0gZnVuY3Rpb24oKSB7XG4gICAgICAgICAgICAgIGN1cnJlbnRUaW1lICs9IGluY3JlbWVudDtcbiAgICAgICAgICAgICAgdmFyIHZhbCA9IE1hdGguZWFzZUluT3V0UXVhZChcbiAgICAgICAgICAgICAgICBjdXJyZW50VGltZSxcbiAgICAgICAgICAgICAgICBzdGFydCxcbiAgICAgICAgICAgICAgICBjaGFuZ2UsXG4gICAgICAgICAgICAgICAgZHVyYXRpb25cbiAgICAgICAgICAgICAgKTtcbiAgICAgICAgICAgICAgd2luZG93LnNjcm9sbFRvKDAsIHZhbCk7XG5cbiAgICAgICAgICAgICAgaWYgKGN1cnJlbnRUaW1lIDwgZHVyYXRpb24pIHtcbiAgICAgICAgICAgICAgICBzZXRUaW1lb3V0KGFuaW1hdGVTY3JvbGwsIGluY3JlbWVudCk7XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH07XG4gICAgICAgICAgICBhbmltYXRlU2Nyb2xsKCk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgZnVuY3Rpb24gcmVtb3ZlQm9keUNsYXNzKCkge1xuICAgICAgICAgICAgJChcImJvZHlcIikucmVtb3ZlQ2xhc3MoXCJzY3JvbGxpbmdcIilcbiAgICAgICAgICB9XG5cbiAgICAgICAgICBNYXRoLmVhc2VJbk91dFF1YWQgPSBmdW5jdGlvbih0LCBiLCBjLCBkKSB7XG4gICAgICAgICAgICB0IC89IGQgLyAyO1xuICAgICAgICAgICAgaWYgKHQgPCAxKSByZXR1cm4gKGMgLyAyKSAqIHQgKiB0ICsgYjtcbiAgICAgICAgICAgIHQtLTtcbiAgICAgICAgICAgIHJldHVybiAoLWMgLyAyKSAqICh0ICogKHQgLSAyKSAtIDEpICsgYjtcbiAgICAgICAgICB9O1xuXG4gICAgICAgICAgY3VzdG9tU2Nyb2xsVG8oc2Nyb2xsT2Zmc2V0LCAyNTApO1xuICAgICAgICAgIHNldFRpbWVvdXQocmVtb3ZlQm9keUNsYXNzLCAyNTApO1xuICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICQoXCJodG1sLCBib2R5XCIpLmFuaW1hdGUoXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgIHNjcm9sbFRvcDogc2Nyb2xsT2Zmc2V0XG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgNTAwLFxuICAgICAgICAgICAgZnVuY3Rpb24oKSB7XG4gICAgICAgICAgICAgICQoXCJib2R5XCIpLnJlbW92ZUNsYXNzKFwic2Nyb2xsaW5nXCIpO1xuICAgICAgICAgICAgfVxuICAgICAgICAgICk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgIH0pO1xuICB9XG4gIG5hdigpO1xuXG4gIGZ1bmN0aW9uIHNjcm9sbCgpIHtcbiAgICB2YXIgc2Nyb2xsUG9zaXRpb24gPSAkKGRvY3VtZW50KS5zY3JvbGxUb3AoKTtcbiAgICB2YXIgc2VjdGlvbkhlaWdodCA9ICQoXCJtYWluXCIpLm91dGVySGVpZ2h0KCk7XG4gICAgJChcIm1haW5cIikuc2Nyb2xsVG9wKHNlY3Rpb25IZWlnaHQgKiAoc2Nyb2xsUG9zaXRpb24gLyAxMDApICsgMSk7XG4gIH1cbiAgc2Nyb2xsKCk7XG5cbiAgJCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpIHtcbiAgICBzY3JvbGwoKTtcbiAgfSk7XG5cbn0pO1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIC4vX2Fzc2V0cy9qcy9tYWluLmpzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./_assets/js/main.js\n");
 
-              if (currentTime < duration) {
-                setTimeout(animateScroll, increment);
-              }
-            };
-            animateScroll();
-          }
+/***/ }),
 
-          function removeBodyClass() {
-            $("body").removeClass("scrolling")
-          }
+/***/ "./_assets/scss/main.scss":
+/***/ (function(module, exports) {
 
-          Math.easeInOutQuad = function(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return (c / 2) * t * t + b;
-            t--;
-            return (-c / 2) * (t * (t - 2) - 1) + b;
-          };
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9fYXNzZXRzL3Njc3MvbWFpbi5zY3NzP2RmNjkiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9fYXNzZXRzL3Njc3MvbWFpbi5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW5cblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL19hc3NldHMvc2Nzcy9tYWluLnNjc3Ncbi8vIG1vZHVsZSBpZCA9IC4vX2Fzc2V0cy9zY3NzL21haW4uc2Nzc1xuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./_assets/scss/main.scss\n");
 
-          customScrollTo(scrollOffset, 250);
-          setTimeout(removeBodyClass, 250);
-        } else {
-          $("html, body").animate(
-            {
-              scrollTop: scrollOffset
-            },
-            500,
-            function() {
-              $("body").removeClass("scrolling");
-            }
-          );
-        }
-      });
-    });
-  }
-  nav();
+/***/ }),
 
-  function scroll() {
-    var scrollPosition = $(document).scrollTop();
-    var sectionHeight = $("main").outerHeight();
-    $("main").scrollTop(sectionHeight * (scrollPosition / 100) + 1);
-  }
-  scroll();
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
 
-  $(window).scroll(function() {
-    scroll();
-  });
+__webpack_require__("./_assets/js/main.js");
+module.exports = __webpack_require__("./_assets/scss/main.scss");
 
-});
+
+/***/ })
+
+},[0]);
