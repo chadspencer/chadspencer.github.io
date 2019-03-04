@@ -15,13 +15,13 @@
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
     <meta name="description" content="Front-end engineer residing in Springfield, MO." />
-    <link href="{{ site.data.mix-manifest['static/css/main.css'] }}" rel="stylesheet">
+    <link href="{{ site.data.mix-manifest['/static/css/main.css'] }}" rel="stylesheet">
   </head>
   <body>
     {{ content }}
-    <script src="{{ site.data.mix-manifest['static/js/manifest.js'] }}"></script>
-    <script src="{{ site.data.mix-manifest['static/js/vendor.js'] }}"></script>
-    <script src="{{ site.data.mix-manifest['static/js/main.js'] }}"></script>
+    <script src="{{ site.data.mix-manifest['/static/js/manifest.js'] }}"></script>
+    <script src="{{ site.data.mix-manifest['/static/js/vendor.js'] }}"></script>
+    <script src="{{ site.data.mix-manifest['/static/js/main.js'] }}"></script>
     <!--[if lt IE 9]>
       <script src="{{ site.data.mix-manifest['/js/html5shiv.js'] }}"></script>
     <![endif]-->
