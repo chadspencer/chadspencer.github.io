@@ -23,18 +23,29 @@ body {
   font-style: normal;
   font-weight: 300;
   height: auto;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   scroll-padding: 50vh 0 0 0;
+  -webkit-scroll-padding: 50vh 0 0 0;
   scroll-snap-type: mandatory;
+  -webkit-scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
   &.scrolling {
     scroll-padding: 0;
+    -webkit-scroll-padding: 0;
     scroll-snap-points-y: none;
+    -webkit-scroll-snap-points-y: none;
     scroll-snap-type: none;
+    -webkit-scroll-snap-type: none;
   }
   @include mq(medium) {
     scroll-padding: 0;
+    -webkit-scroll-padding: 0;
     scroll-snap-points-y: none;
+    -webkit-scroll-snap-points-y: none;
     scroll-snap-type: none;
+    -webkit-scroll-snap-type: none;
   }
 }
 nav.projects {
@@ -53,6 +64,7 @@ nav.projects {
     line-height: 39px;
     padding: 30px 2%;
     scroll-snap-align: start;
+    -webkit-scroll-snap-align: start;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;

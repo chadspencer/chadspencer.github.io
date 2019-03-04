@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function() {
   function nav() {
     $("nav span").each(function(index) {
