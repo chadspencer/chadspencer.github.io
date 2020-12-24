@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("nav span").each(function(index) {
       $(this).click(function() {
         var scrollOffset = 100 * (index + 1);
-        $("body").addClass("scrolling");
+        // $("body").addClass("scrolling");
         if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone/i)) {
           function customScrollTo(to, duration) {
             var start = window.pageYOffset,
@@ -30,9 +30,9 @@ $(document).ready(function() {
             animateScroll();
           }
 
-          function removeBodyClass() {
-            $("body").removeClass("scrolling")
-          }
+          // function removeBodyClass() {
+          //   $("body").removeClass("scrolling")
+          // }
 
           Math.easeInOutQuad = function(t, b, c, d) {
             t /= d / 2;
@@ -42,16 +42,16 @@ $(document).ready(function() {
           };
 
           customScrollTo(scrollOffset, 250);
-          setTimeout(removeBodyClass, 250);
+          // setTimeout(removeBodyClass, 250);
         } else {
           $("html, body").animate(
             {
               scrollTop: scrollOffset
             },
-            500,
-            function() {
-              $("body").removeClass("scrolling");
-            }
+            500
+            // function() {
+            //   $("body").removeClass("scrolling");
+            // }
           );
         }
       });

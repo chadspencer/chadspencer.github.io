@@ -31,14 +31,14 @@ body {
   -webkit-scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
   -webkit-scroll-snap-type: y mandatory;
-  &.scrolling {
-    scroll-padding: 0;
-    -webkit-scroll-padding: 0;
-    scroll-snap-points-y: none;
-    -webkit-scroll-snap-points-y: none;
-    scroll-snap-type: none;
-    -webkit-scroll-snap-type: none;
-  }
+  // &.scrolling {
+  //   scroll-padding: 0;
+  //   -webkit-scroll-padding: 0;
+  //   scroll-snap-points-y: none;
+  //   -webkit-scroll-snap-points-y: none;
+  //   scroll-snap-type: none;
+  //   -webkit-scroll-snap-type: none;
+  // }
   @include mq(medium) {
     scroll-padding: 0;
     -webkit-scroll-padding: 0;

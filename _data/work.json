@@ -7,27 +7,6 @@
     "url": "https://www.simplyinspiredco.com"
   },
   {
-    "title": "Colony Co.",
-    "description": "Lorem ipsum doler sit amet.",
-    "image": "colony.jpg",
-    "tags": ["front-end", "back-end", "shopify"],
-    "url": "https://colonyco.com"
-  },
-  {
-    "title": "Carpet Shoppe",
-    "description": "Lorem ipsum doler sit amet.",
-    "image": "carpetshoppe.jpg",
-    "tags": ["front-end", "back-end", "craft cms"],
-    "url": "https://www.thecarpetshoppe.com"
-  },
-  {
-    "title": "Boyd Aluminum",
-    "description": "Lorem ipsum doler sit amet.",
-    "image": "boyd.jpg",
-    "tags": ["front-end", "back-end", "craft cms"],
-    "url": "https://menards.boydaluminum.com"
-  },
-  {
     "title": "Burrell Behavioral Health",
     "description": "Lorem ipsum doler sit amet.",
     "image": "burrell.jpg",
@@ -42,17 +21,66 @@
     "url": "https://www.417mag.com"
   },
   {
-    "title": "Noble Audio",
+    "title": "Community Foundation of the Ozarks",
     "description": "Lorem ipsum doler sit amet.",
-    "image": "nobleaudio.jpg",
-    "tags": ["front-end", "back-end", "symphony cms"],
-    "url": "https://nobleaudio.com/en/"
+    "image": "cfo.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.cfozarks.org"
   },
   {
-    "title": "Missouri Over There",
+    "title": "Clear Design",
     "description": "Lorem ipsum doler sit amet.",
-    "image": "overthere.jpg",
-    "tags": ["front-end", "back-end", "symphony cms"],
-    "url": "http://missourioverthere.org"
+    "image": "clear.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.mycleardesign.com"
+  },
+  {
+    "title": "Big Whiskeys",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "bigwhiskeys.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.bigwhiskeys.com"
+  },
+  {
+    "title": "Springfield Mechanical Services",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "smsi.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.springfieldmechanical.com"
+  },
+  {
+    "title": "Fabritrak",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "fabritrak.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.fabritrak.com"
+  },
+  {
+    "title": "TDP Architecture",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "tdp.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.tdp-arch.com"
+  },
+  {
+    "title": "Habitat",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "habitat.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://www.teamhabitat.com"
+  },
+  {
+    "title": "Boyd Aluminum",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "boyd.jpg",
+    "tags": ["front-end", "back-end", "craft cms"],
+    "url": "https://menards.boydaluminum.com"
+  },
+  {
+    "title": "Moxie Cinema",
+    "description": "Lorem ipsum doler sit amet.",
+    "image": "moxie.jpg",
+    "tags": ["front-end"],
+    "url": "http://www.moxiecinema.com"
   }
 ]
