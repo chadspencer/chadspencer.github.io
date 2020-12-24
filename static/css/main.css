@@ -5482,6 +5482,17 @@ body {
   -webkit-scroll-snap-type: y mandatory;
 }
 
+body.scrolling {
+  scroll-padding: 0;
+  -webkit-scroll-padding: 0;
+  -ms-scroll-snap-points-y: none;
+      scroll-snap-points-y: none;
+  -webkit-scroll-snap-points-y: none;
+  -ms-scroll-snap-type: none;
+      scroll-snap-type: none;
+  -webkit-scroll-snap-type: none;
+}
+
 @media (max-width: 959px) {
   body {
     scroll-padding: 0;
