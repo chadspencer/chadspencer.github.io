@@ -12,7 +12,7 @@ export const data = [
   },
   {
     "title": "Articles",
-    "description": "Recently I've tried to start writing more about my craft and the work I do on <a href='https://chadspen.medium.com/' target='_blank'>Medium</a>. I plan to write more. Trust me, why would I lie.",
+    "description": "Recently I've tried to start writing more about my craft and the work I do on <a href='https://chadspen.medium.com/' target='_blank'>Medium</a>. I plan to write more. Trust me, why would I lie?",
     "color": orange,
   },
   {
