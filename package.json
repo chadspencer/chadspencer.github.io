@@ -29,7 +29,7 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "homepage": "https://chadspencer.github.io",
+  "homepage": "https://chadspencer.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
