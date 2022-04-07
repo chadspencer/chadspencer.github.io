@@ -7,9 +7,9 @@ import ScrolledToEdge from "../scrolled-to-edge";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
       <Route path="/overflowcue" element={<OverflowCue />} />
       <Route path="/scrolledtoedge" element={<ScrolledToEdge />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 }
