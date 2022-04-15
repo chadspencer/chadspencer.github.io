@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react'
 import { blue } from './colors';
+import { data } from '../../home/data';
+
+const itemCount = data.length;
 
 const ubuntu = "'Ubuntu', Helvetica, Arial, Verdana, sans-serif";
 const mont = "'Montserrat', Helvetica, Arial, Verdana, sans-serif";
@@ -28,6 +31,8 @@ export const global = css`
     height: auto;
   }
   body {
+    --section-size: ${itemCount * 100}px;
+    --section-size-mobile: ${itemCount * 70}px;
     background: black;
     color: black;
     font-family: ${ubuntu};
@@ -36,9 +41,9 @@ export const global = css`
 `;
 
 export const Nav = styled.nav`
-  padding: calc(100vh - 500px) 0 0 0;
+  padding: calc(100vh - var(--section-size)) 0 0 0;
   @media only screen and (max-width: 600px) {
-    padding-top: calc(100vh - 350px);
+    padding-top: calc(100vh - var(--section-size-mobile));
   }
 `;
 
@@ -66,7 +71,7 @@ export const NavLink = styled.nav`
 `;
 
 export const Main = styled.main`
-  height: calc(100vh - 500px);
+  height: calc(100vh - var(--section-size));
   left: 0;
   overflow: hidden;
   position: fixed;
@@ -74,7 +79,7 @@ export const Main = styled.main`
   top: 0;
   width: 100%;
   @media only screen and (max-width: 600px) {
-    height: calc(100vh - 350px);
+    height: calc(100vh - var(--section-size-mobile));
   }
 `;
 
@@ -82,11 +87,11 @@ export const Section = styled.section`
   background: ${props => props.color ? props.color : 'white'};
   box-sizing: border-box;
   display: block;
-  height: calc(100vh - 500px);
+  height: calc(100vh - var(--section-size));
   overflow: hidden;
   position: relative;
   @media only screen and (max-width: 600px) {
-    height: calc(100vh - 350px);
+    height: calc(100vh - var(--section-size-mobile));
   }
 `;
 
@@ -160,11 +165,11 @@ export const Article = styled.article`
 
 export const Footer = styled.footer`
   background: ${blue};
-  height: 500px;
+  height: var(--section-size);
   padding: 0 2%;
   position: relative;
   @media only screen and (max-width: 600px) {
-    height: calc(350px + (env(safe-area-inset-bottom, 0) * 2));
+    height: calc(var(--section-size-mobile) + (env(safe-area-inset-bottom, 0) * 2));
     padding: 0 5%;
   }
   .container {
