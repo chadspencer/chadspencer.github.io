@@ -3,7 +3,7 @@ import { orange, red, teal, yellow } from '../app/styles/colors';
 export const data = [
   {
     "title": "Chad Spencer",
-    "description": "I'm a leader, problem solver and overall swell guy living in the heart of the midwest. My passion is bringing static designs to life with an eye for aesthetic and an obsession for detail. I'm currently working as a Design Engineering Manager at <a href='https://www.indeed.com/' target='_blank'>Indeed</a>.",
+    "description": "I'm a leader, problem solver and overall swell guy living in the heart of the midwest. My passion is helping teams build great products. I'm currently working as a design engineering manager at <a href='https://www.indeed.com/' target='_blank'>Indeed</a>.",
   },
   {
     "title": "Articles",
@@ -12,7 +12,7 @@ export const data = [
   },
   {
     "title": "Projects",
-    "description": "I've spent most of my career in product working on design systems. Occasionally, I build something for others to use like <a href='/scrolledtoedge' target='_blank'>Scrolled to Edge</a> and <a href='/scrolledtoedge' target='_blank'>Overflow Cue</a>. I used to build a lot of websites.",
+    "description": "I've spent most of my career as a front-end engineer working on design systems. Occasionally, I build something for others to use like <a href='/scrolledtoedge' target='_blank'>Scrolled to Edge</a> and <a href='/scrolledtoedge' target='_blank'>Overflow Cue</a>. I used to build a lot of websites.",
     "color": orange,
   },
   {
