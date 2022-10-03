@@ -3,16 +3,16 @@ import { orange, red, teal, yellow } from '../app/styles/colors';
 export const data = [
   {
     "title": "Chad Spencer",
-    "description": "I'm a developer, problem solver and overall swell guy living in the heart of the midwest. My passion is bringing static designs to life with an eye for aesthetic and an obsession for detail. I'm currently working as a Senior UX Developer at <a href='https://www.indeed.com/' target='_blank'>Indeed</a>.",
+    "description": "I'm a leader, problem solver and overall swell guy living in the heart of the midwest. My passion is bringing static designs to life with an eye for aesthetic and an obsession for detail. I'm currently working as a Design Engineering Manager at <a href='https://www.indeed.com/' target='_blank'>Indeed</a>.",
+  },
+  {
+    "title": "Articles",
+    "description": "Recently I've tried to start writing more about my craft and the work I do on <a href='https://chadspen.medium.com/' target='_blank'>Medium</a>. I plan to write more, trust me.",
+    "color": red,
   },
   {
     "title": "Projects",
     "description": "I've spent most of my career in product working on design systems. Occasionally, I build something for others to use like <a href='/scrolledtoedge' target='_blank'>Scrolled to Edge</a> and <a href='/scrolledtoedge' target='_blank'>Overflow Cue</a>. I used to build a lot of websites.",
-    "color": red,
-  },
-  {
-    "title": "Articles",
-    "description": "Recently I've tried to start writing more about my craft and the work I do on <a href='https://chadspen.medium.com/' target='_blank'>Medium</a>. I plan to write more. Trust me, why would I lie?",
     "color": orange,
   },
   {
